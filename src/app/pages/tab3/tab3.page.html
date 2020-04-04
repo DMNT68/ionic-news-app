@@ -1,7 +1,7 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
 	<ion-toolbar>
 		<ion-title>
-			Tab 3
+			Favoritos
 		</ion-title>
 	</ion-toolbar>
 </ion-header>
@@ -9,7 +9,10 @@
 <ion-content>
 	<ion-slides [options]="sliderOpts" *ngIf="dataLocalService.noticias.length === 0">
 		<ion-slide>
-			<ion-label>No hay favoritos</ion-label>
+			<div>
+				<ion-icon class="icon" slot="only-icon" name="star-outline"></ion-icon><br />
+				<ion-label>No hay favoritos</ion-label>
+			</div>
 		</ion-slide>
 	</ion-slides>
 
