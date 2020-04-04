@@ -12,6 +12,7 @@
 		<ion-card-title (click)="abrirNoticia()">{{ noticia.title }}</ion-card-title>
 	</ion-card-header>
 	<ion-img
+		class="animated fadeIn fast"
 		[src]="noticia.urlToImage"
 		*ngIf="noticia.urlToImage"
 		(click)="abrirNoticia()"

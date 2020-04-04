@@ -8,7 +8,7 @@
 			size-sx="12"
 			*ngFor="let noticia of noticias; let i = index"
 		>
-			<app-noticia [noticia]="noticia" [i]="i"></app-noticia>
+			<app-noticia [noticia]="noticia" [i]="i" [enFavoritos]="enFavoritos"></app-noticia>
 		</ion-col>
 	</ion-row>
 </ion-grid>
